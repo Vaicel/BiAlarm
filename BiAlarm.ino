@@ -88,7 +88,7 @@ void loop()
                 sim.print(",");
                 sim.print(StringMass[COUNT_OF_LATITUDE]);
                 delay(1000); 
-                sim.print(26,BYTE);
+                sim.print(26,HEX);
                 prevTime=millis();
             }
         }
@@ -96,6 +96,5 @@ void loop()
 }
 
 
-}
 
 
