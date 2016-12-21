@@ -100,9 +100,11 @@ void loop()
             }
         }
     }
-    ax1=ax2;
-    ay1=ay2;
-    az1=az2;
+    if(trigger==true){
+        ax1=ax2;
+        ay1=ay2;
+        az1=az2;
+    }
 }
 
 
