@@ -29,6 +29,13 @@ void loop()
     {
         trigger=true;
     }
+    if((ax2-ax1<=0.2)||(ay2-ay1<=0.2)||(az2-az1<=0.2))
+    {
+        if(millis()-prevTime>300000){       
+            trigger=false;
+            prevTime= -300000;
+        }
+    }
     char index = 0;
     char temp = 0;
     String dataString = "";
@@ -92,7 +99,10 @@ void loop()
                 prevTime=millis();
             }
         }
-    }    
+    }
+    ax1=ax2;
+    ay1=ay2;
+    az1=az2;
 }
 
 
