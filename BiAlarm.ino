@@ -28,9 +28,6 @@ void loop()
     if((ax2-ax1>=0.5)||(ay2-ay1>=0.5)||(az2-az1>=0.5))
     {
         trigger=true;
-        ax1=ax2;
-        ay1=ay2;
-        az1=az2;
     }
     if((ax2-ax1<=0.2)||(ay2-ay1<=0.2)||(az2-az1<=0.2))
     {
